@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workshops &amp; Events - Riverbend Yoga Studio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Riverbend Yoga Studio</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Classes &amp; Services</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="events.html">Workshops &amp; Events</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Monthly Workshops</h2>
+            <p>Dive deeper into your personal practice with our specialized weekend workshops.</p>
+            
+            <figure>
+                <img src="yoga-workshop.jpg" alt="A group of diverse students sitting comfortably on meditation cushions during a workshop.">
+                <figcaption>Our monthly Saturday Mindfulness and Sound Bath workshop session.</figcaption>
+            </figure>
+        </section>
+
+        <section>
+            <h2>Request a Spot &amp; Information Form</h2>
+            <p>Fill out the form below to request a spot in an upcoming event or to ask general questions about our class options.</p>
+
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Your Contact Details</legend>
+                    
+                    <p>
+                        <label for="username">Full Name:</label>
+                        <input type="text" id="username" name="username" required aria-required="true">
+                    </p>
+                    
+                    <p>
+                        <label for="useremail">Email Address:</label>
+                        <input type="email" id="useremail" name="useremail" required aria-required="true">
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Your Preferences &amp; Yoga Goals</legend>
+                    
+                    <p>
+                        <label for="interest">Class or Event Interest:</label>
+                        <select id="interest" name="interest">
+                            <option value="gentle">Gentle Yoga</option>
+                            <option value="vinyasa">Vinyasa Flow</option>
+                            <option value="restorative">Restorative Yoga</option>
+                            <option value="workshop">Monthly Weekend Workshop</option>
+                        </select>
+                    </p>
+
+                    <p>
+                        <label for="experience">Experience Level:</label>
+                        <select id="experience" name="experience">
+                            <option value="beginner">Complete Beginner</option>
+                            <option value="intermediate">Some Experience</option>
+                            <option value="advanced">Advanced Practice</option>
+                        </select>
+                    </p>
+
+                    <p>
+                        Preferred Contact Method:<br>
+                        <input type="radio" id="contact-email" name="contact-method" value="email" checked>
+                        <label class="inline-label" for="contact-email">Email</label><br>
+                        <input type="radio" id="contact-phone" name="contact-method" value="phone">
+                        <label class="inline-label" for="contact-phone">Phone Call</label>
+                    </p>
+
+                    <p>
+                        <label for="message">Message / Questions:</label><br>
+                        <textarea id="message" name="message" rows="4" cols="40" placeholder="Tell us how we can best support your journey..."></textarea>
+                    </p>
+                </fieldset>
+
+                <p>
+                    <button type="submit">Submit Request</button>
+                </p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Riverbend Yoga Studio. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

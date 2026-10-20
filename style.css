@@ -1,0 +1,81 @@
+/* --- Global Styles & Color Palette --- */
+:root {
+    --primary-color: #2E5A44;   /* Deep Sage Green */
+    --accent-color: #D4A373;    /* Warm Sandy Gold */
+    --bg-light: #FAEDCD;        /* Soft Cream Background */
+    --text-dark: #333333;       /* Charcoal Text for high contrast Readability */
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-light);
+    color: var(--text-dark);
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* --- Layout System Using Flexbox --- */
+header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: var(--accent-color);
+}
+
+main {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 15px;
+    background: white;
+    border-radius: 8px;
+}
+
+section {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Form Styles */
+fieldset {
+    border: 2px solid var(--primary-color);
+    margin-bottom: 15px;
+    padding: 15px;
+}
+
+/* Responsive Image Handling */
+img, picture, video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 15px 0;
+}
+
+/* --- Responsive Media Query (Larger Screens) --- */
+@media (min-width: 768px) {
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 1rem 4rem;
+    }
+}
