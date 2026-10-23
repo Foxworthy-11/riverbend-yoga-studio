@@ -33,21 +33,29 @@
 
         <section>
             <h2>Request a Spot &amp; Information Form</h2>
-            <form id="yogaForm">
             <p>Fill out the form below to request a spot in an upcoming event or to ask general questions about our class options.</p>
 
-            <form action="#" method="post">
+            <!-- ✨ INTERACTIVE WISHLIST DISPLAY SECTION ✨ -->
+            <div id="wishlistContainer" style="background: #FAEDCD; border: 2px dashed #2E5A44; padding: 15px; margin: 20px 0; border-radius: 8px;">
+                <h3>✨ Your Selected Class Focus</h3>
+                <p id="wishlistDisplay">No class option selected yet. Use the dropdown menu below to pick one!</p>
+            </div>
+
+            <!-- Single Clean Form Element -->
+            <form id="yogaForm" action="#" method="post">
                 <fieldset>
                     <legend>Your Contact Details</legend>
                     
                     <p>
+                        <label for="fullName">Full Name:</label><br>
                         <input type="text" id="fullName" name="fullName">
-                        <span id="nameError" style="color: red; display: block; font-weight: bold; margin-bottom: 10px;"></span>
+                        <span id="nameError" style="color: red; display: block; font-weight: bold; margin-top: 5px;"></span>
                     </p>
                     
                     <p>
+                        <label for="emailAddress">Email Address:</label><br>
                         <input type="email" id="emailAddress" name="emailAddress">
-                        <span id="emailError" style="color: red; display: block; font-weight: bold; margin-bottom: 10px;"></span>
+                        <span id="emailError" style="color: red; display: block; font-weight: bold; margin-top: 5px;"></span>
                     </p>
                 </fieldset>
 
@@ -57,10 +65,11 @@
                     <p>
                         <label for="interest">Class or Event Interest:</label>
                         <select id="interest" name="interest">
-                            <option value="gentle">Gentle Yoga</option>
-                            <option value="vinyasa">Vinyasa Flow</option>
-                            <option value="restorative">Restorative Yoga</option>
-                            <option value="workshop">Monthly Weekend Workshop</option>
+                            <option value="">-- Choose a Class Options --</option>
+                            <option value="Gentle Yoga">Gentle Yoga</option>
+                            <option value="Vinyasa Flow">Vinyasa Flow</option>
+                            <option value="Restorative Yoga">Restorative Yoga</option>
+                            <option value="Monthly Weekend Workshop">Monthly Weekend Workshop</option>
                         </select>
                     </p>
 
@@ -97,7 +106,9 @@
     <footer>
         <p>&copy; 2026 Riverbend Yoga Studio. All rights reserved.</p>
     </footer>
-<script src="script.js"></script>
+
+    <!-- Linked script down here inside body tag -->
+    <script src="script.js"></script>
     
 </body>
-</html>
+</html
